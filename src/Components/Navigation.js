@@ -6,7 +6,11 @@ const Navigation = () => {
     <div className="sidebar">
       <div className="id">
         <div className="idContent">
-          <img src="./media/frida.jpg" alt="profil-pic" />
+          <img
+            src="./media/profil.jpg"
+            alt="profil-pic"
+            style={{ width: 150 }}
+          />
           <h3>Florent Derouet</h3>
         </div>
       </div>
@@ -14,7 +18,11 @@ const Navigation = () => {
         <ul>
           <li>
             {" "}
-            <NavLink exact to="/" activeClassName="navActive">
+            <NavLink
+              exact="true"
+              to="/"
+              className={(navData) => (navData.isActive ? "navActive" : "none")}
+            >
               <i className="fas fa-home"></i>
               <span>Accueil</span>
             </NavLink>
@@ -22,15 +30,23 @@ const Navigation = () => {
 
           <li>
             {" "}
-            <NavLink exact to="/competences" activeClassName="navActive">
+            <NavLink
+              exact="true"
+              to="/competences"
+              className={(navData) => (navData.isActive ? "navActive" : "none")}
+            >
               <i className="fas fa-mountain"></i>
-              <span>Competences</span>
+              <span>Compétences</span>
             </NavLink>
           </li>
 
           <li>
             {" "}
-            <NavLink exact to="/portfolio" activeClassName="navActive">
+            <NavLink
+              exact="true"
+              to="/portfolio"
+              className={(navData) => (navData.isActive ? "navActive" : "none")}
+            >
               <i className="fas fa-images"></i>
               <span>Portfolio</span>
             </NavLink>
@@ -38,9 +54,13 @@ const Navigation = () => {
 
           <li>
             {" "}
-            <NavLink exact to="/contact" activeClassName="navActive">
+            <NavLink
+              exact="true"
+              to="/contact"
+              className={(navData) => (navData.isActive ? "navActive" : "none")}
+            >
               <i className="fas fa-address-book"></i>
-              <span>contact</span>
+              <span>Contact</span>
             </NavLink>
           </li>
         </ul>
@@ -56,7 +76,8 @@ const Navigation = () => {
             >
               <i className="fab fa-linkedin"></i>
             </a>
-
+          </li>
+          <li>
             <a
               href="https://github.com/Florent89/"
               target="_blank"
