@@ -13,10 +13,10 @@ function App() {
         {/* <Header />
         <NavBar /> */}
         <Routes>
-          <Route path="/cv-portfolio/" element={<Home />} />
-          <Route path="/cv-portfolio/contact" element={<Contact />} />
-          <Route path="/cv-portfolio/portfolio" element={<Portfolio />} />
-          <Route path="/cv-portfolio/competences" element={<Knowledges />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/competences" element={<Knowledges />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         {/* <Footer /> */}
