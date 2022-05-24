@@ -2,7 +2,7 @@
   "name": "cv-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Florent89.github.io/cv-portfolio",
+  "homepage": "https://Florent89.github.io/cv-portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
