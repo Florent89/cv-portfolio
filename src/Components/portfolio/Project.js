@@ -12,7 +12,8 @@ class Project extends Component {
   };
 
   render() {
-    let { name, languagesIcons, source, info, picture, lien } = this.props.item;
+    let { name, languagesIcons, source, info, picture, lien, video } =
+      this.props.item;
 
     return (
       <div className="project">
@@ -56,7 +57,19 @@ class Project extends Component {
                   )}
                 </div>
               </div>
+
               <p className="text">{info} </p>
+              {video !== "" && (
+                <a
+                  href={video}
+                  rel="noopener noreferrer"
+                  className="button"
+                  target="_blank"
+                  style={{ "padding-bottom": "10px" }}
+                >
+                  Vidéo de démonstration
+                </a>
+              )}
               <div className="button return" onClick={this.handleInfo}>
                 Retourner sur la page
               </div>
