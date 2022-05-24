@@ -11,8 +11,8 @@ const Home = () => {
           <h2>Concepteur développeur d'application</h2>
           <div className="pdf">
             <a
+              basename={`/${process.env.PUBLIC_URL}`}
               href="./media/cv.pdf"
-              download={"./media/cv.pdf"}
               target="_blank"
             >
               Télécharger le CV
