@@ -54,9 +54,17 @@
     }
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 845px) {
   .homeContent {
-    margin: 0 !important;
+    &:after {
+      background: url("../../media/web1.jpg") no-repeat 60% 50% / cover !important;
+    }
+    h1 {
+      font-size: 3rem !important;
+    }
+    h2 {
+      font-size: 1.8rem !important;
+    }
   }
 }
 @media screen and (max-width: 580px) {

@@ -16,7 +16,7 @@ const Hobbies = () => {
         </li>
 
         <li className="hobby">
-          <i class="fas fa-atom"></i>
+          <i className="fas fa-atom"></i>
           <span>L'astronomie</span>
         </li>
 
