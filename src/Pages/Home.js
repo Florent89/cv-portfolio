@@ -10,11 +10,7 @@ const Home = () => {
           <h1>Florent Derouet</h1>
           <h2>Concepteur développeur d'application</h2>
           <div className="pdf">
-            <a
-              href={`/${process.env.PUBLIC_URL}/media/CV.pdf`}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="./media/cv.pdf" target="_blank">
               Télécharger le CV
             </a>
           </div>
