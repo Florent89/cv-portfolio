@@ -222,6 +222,7 @@
         font-size: 1rem;
       }
     }
+
     .infosContent {
       width: 100% !important;
     }
@@ -237,6 +238,7 @@
         font-size: 1rem;
       }
     }
+
     .infosContent {
       width: 100% !important;
     }
@@ -244,13 +246,13 @@
 }
 @media (max-width: 520px) {
   .radioDisplay {
-    display: none !important;
+    height: 50px;
   }
   .portfolioContent {
     grid-template-rows: 1fr !important;
 
     .project {
-      grid-template-rows: 30px 40px !important;
+      grid-template-rows: 30px 80px !important;
       width: 75% !important;
       gap: 20px;
 
@@ -258,5 +260,8 @@
         height: 150px !important;
       }
     }
+  }
+  .infosContent {
+    width: 100% !important;
   }
 }

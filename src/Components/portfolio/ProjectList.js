@@ -3,16 +3,28 @@ import { portfolioData } from "../../data/portfolioData";
 import Project from "./Project";
 
 export default class ProjectList extends Component {
-  state = {
-    projects: portfolioData,
-    radios: [
-      { id: 1, value: "javascript" },
-      { id: 2, value: "Node JS" },
-      { id: 3, value: "React" },
-      { id: 4, value: "Symfony" },
-      { id: 5, value: "react-native" },
-    ],
-    selectedRadio: "javascript",
+  constructor(props) {
+    super();
+    this.state = {
+      projects: portfolioData,
+      radios: [
+        { id: 1, value: "javascript", icon: "fab fa-js" },
+        { id: 2, value: "Node JS", icon: "fab fa-node-js" },
+        { id: 3, value: "React", icon: "fab fa-react" },
+        { id: 4, value: "Symfony", icon: "fab fa-symfony" },
+        { id: 5, value: "react-native", icon: "fab fa-android" },
+      ],
+      selectedRadio: "javascript",
+      width: window.innerWidth,
+    };
+    this.updateDimensions = this.updateDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions);
+  }
+  updateDimensions = () => {
+    this.setState({ width: window.innerWidth });
   };
 
   handleRadio = (event) => {
@@ -23,7 +35,7 @@ export default class ProjectList extends Component {
   };
 
   render() {
-    let { projects, radios, selectedRadio } = this.state;
+    let { projects, radios, selectedRadio, width } = this.state;
     return (
       <div className="portfolioContent">
         <ul className="radioDisplay">
@@ -38,7 +50,16 @@ export default class ProjectList extends Component {
                   id={radio.value}
                   onChange={this.handleRadio}
                 />
-                <label htmlFor={radio.value}> {radio.value} </label>
+                <label htmlFor={radio.value}>
+                  {width > 520 ? (
+                    <span className="radioDisplayLabel">{radio.value} </span>
+                  ) : (
+                    <span className="radioDisplayIcon">
+                      <i className={radio.icon}></i>
+                    </span>
+                  )}
+                  {}
+                </label>
               </li>
             );
           })}

@@ -10,7 +10,7 @@ export const portfolioData = [
       "fab fa-css3-alt",
     ],
     source: "",
-    info: "Création d'un site web pour une coach en développement personnel avec un achat en ligne de podcast et un sytème d'abonnements et d'espace memebre. Livraison prévue pour fin juillet 2022",
+    info: "Création d'un site web pour une coach en développement personnel avec un achat en ligne de podcast et un sytème d'abonnements et d'espace membre. Livraison prévue fin juillet 2022",
     picture: "./media/picture1.jpg",
     lien: "",
     video: "",
@@ -39,7 +39,7 @@ export const portfolioData = [
   },
   {
     id: 4,
-    name: "API REST node js",
+    name: "API REST ",
     languages: ["Node JS", "javascript"],
     languagesIcons: ["fab fa-node-js", "fab fa-js"],
     source: "https://github.com/Florent89/FlorentDerouet_6_250721",
