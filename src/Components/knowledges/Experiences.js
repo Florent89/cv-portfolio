@@ -5,19 +5,28 @@ const Experiences = () => {
     <div className="experience">
       <h3>Expériences & formations</h3>
       <div className="exp-1">
-        <h4>Alternant développeur web - Eig Santé</h4>
-        <h5>Septembre 2021 - Septembre 2022</h5>
+        <h4>Développeur web junior - Eig Santé</h4>
+        <h5>Octobre 2022 - ...</h5>
         <p>
           {" "}
-          Editeur de logiciel de gestion - En alternance depuis le 27 septembre
-          2021, je travaille sur un projet de mise en ligne d'une application
-          sur le web. Le projet est codé en Angular 13 et en Sass. J'utilise
-          également l'outil de versionning GitLab, ainsi que Jira pour le suivi
-          du projet et la gestion des tickets.
+          Editeur de logiciel de gestion - En CDI depuis le 1er octobre, je
+          travaille sur un projet de mise en ligne d'une application sur le web.
+          Le projet est codé en Angular 13 et en Sass. J'utilise également
+          l'outil de versionning GitLab, ainsi que Jira pour le suivi du projet
+          et la gestion des tickets.
         </p>
       </div>
 
       <div className="exp-2">
+        <h4>Alternant développeur web - Eig Santé</h4>
+        <h5>Septembre 2021 - Septembre 2022</h5>
+        <p>
+          {" "}
+          Editeur de logiciel de gestion - Même expérience que précédemment.
+        </p>
+      </div>
+
+      <div className="exp-3">
         <h4>
           Formation de concepteur développeur d'application - CEFii Angers
         </h4>
@@ -32,7 +41,7 @@ const Experiences = () => {
         </p>
       </div>
 
-      <div className="exp-3">
+      <div className="exp-4">
         <h4>Formation développeur web - OpenClassrooms</h4>
         <h5>mars 2021 - Septembre 2021</h5>
         <p>

@@ -1,7 +1,7 @@
 export const portfolioData = [
   {
     id: 1,
-    name: "Coach en développement",
+    name: "Site web thérapeute et coach",
     languages: ["Node JS", "React", "javascript"],
     languagesIcons: [
       "fab fa-node-js",
@@ -12,7 +12,7 @@ export const portfolioData = [
     source: "",
     info: "Création d'un site web pour une coach en développement personnel avec un achat en ligne de podcast et un sytème d'abonnements et d'espace membre. Livraison prévue fin juillet 2022",
     picture: "./media/picture1.jpg",
-    lien: "",
+    lien: "https://mariannederouet.com",
     video: "",
   },
   {

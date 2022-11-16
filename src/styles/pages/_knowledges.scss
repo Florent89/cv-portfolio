@@ -143,6 +143,9 @@
       .exp-3 {
         grid-area: 4;
       }
+      .exp-4 {
+        grid-area: 5;
+      }
     }
     .otherSkills {
       grid-area: O;
@@ -151,7 +154,7 @@
       .list {
         display: flex;
         width: 80%;
-        height: 100%;
+        height: 90%;
         margin: 0 auto;
         justify-content: space-between;
 
@@ -173,7 +176,7 @@
       padding-left: 1.5rem;
 
       ul {
-        height: 80%;
+        height: 66%;
         display: grid;
 
         li {
